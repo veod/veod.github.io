@@ -31,7 +31,7 @@ $vendorjs = "assets/js/vendorjs/vendorjs.min.js";
 /* URL сайта */
 //$site_url = "";
 /* Производитель (брэнд) */
-$manufacturer = "";
+$manufacturer = "Автосайт";
 
 /**** КОНТАКТНЫЕ ДАННЫЕ ****/
 /* Телефон */

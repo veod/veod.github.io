@@ -1,4 +1,6 @@
 <?php
+header("HTTP/1.1 403 Forbidden" );
+require_once 'vars.php';
 // Проверяем значения, полученные при проверке скриптом формы
 if (trim($_POST['norobot'])!='norobot_true') {
 	echo 'false';
@@ -11,11 +13,11 @@ else {
 	$txtphone = trim($_POST['txtphone']);
 
 	// от кого
-	$fromMail = 'docbaza@yandex.com';
-	$fromName = 'Автосайт';
+	$fromMail = "example@example.com";
+	$fromName = "{$manufacturer}";
 
 	// Сюда введите Ваш email
-	$emailTo = 'a.bags@yandex.com';
+	$emailTo = "{$email}";
 
 	$subject = 'Заявка на звонок с сайта: ' . $_SERVER['HTTP_REFERER'];
 	$subject = '=?utf-8?b?'. base64_encode($subject) .'?=';
